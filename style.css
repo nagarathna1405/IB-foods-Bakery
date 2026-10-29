@@ -392,3 +392,82 @@ img {
         padding: 15px;
     }
 }
+/* IB Foods - Modern Welcome Screen Improvements */
+
+.logo-card {
+    width: min(90%, 650px);
+    margin: 30px auto;
+    padding: 45px 25px;
+    border-radius: 32px;
+    background: rgba(255, 252, 247, 0.96);
+    box-shadow: 0 20px 55px rgba(45, 25, 10, 0.22);
+    text-align: center;
+    animation: bakeryEntrance 0.8s ease-out;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-card img {
+    width: 220px;
+    height: 220px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    padding: 15px;
+    border: 8px solid #f1e4d5;
+    box-shadow: 0 12px 30px rgba(65, 35, 15, 0.18);
+}
+
+.logo-card h1 {
+    color: #8b4513;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin: 25px 0 12px;
+    font-weight: 800;
+}
+
+.logo-card p {
+    color: #4d4038;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@keyframes bakeryEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-card {
+        width: calc(100% - 30px);
+        margin: 20px auto;
+        padding: 30px 18px;
+        border-radius: 24px;
+    }
+
+    .logo-card img {
+        width: 170px;
+        height: 170px;
+        border-width: 6px;
+    }
+
+    .logo-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .logo-card {
+        animation: none;
+    }
+}
