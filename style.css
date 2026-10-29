@@ -516,3 +516,28 @@ letter-spacing: 1px;
 ```
 
 }
+/* Warm, premium bakery card background */
+.logo-card {
+background: linear-gradient(
+135deg,
+#fff1dc 0%,
+#f5dfc3 50%,
+#fbead5 100%
+);
+border: 1px solid #e6c49b;
+box-shadow: 0 20px 55px rgba(76, 43, 20, 0.25);
+}
+
+/* Make the logo border match the warm theme */
+.logo-card img {
+border-color: #e6c49b;
+}
+
+/* Warm text colours */
+.logo-card h1 {
+color: #87451d;
+}
+
+.logo-card p {
+color: #634832;
+}
