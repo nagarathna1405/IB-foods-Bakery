@@ -371,3 +371,24 @@ footer {
   font-weight: 600;
   color: #222;   /* DARK COLOR */
 }
+/* Mobile-friendly improvements */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+}
